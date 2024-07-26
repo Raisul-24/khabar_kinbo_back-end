@@ -1,4 +1,4 @@
-These packages collectively contribute to the functionality, user experience, styling, and development workflow of the "Khabar-kinbo-front-end" web project.
+These packages collectively contribute to the functionality, user experience, styling, and development workflow of the "Khabar-kinbo-back-end" web project.
 
 # Run the project Process
 
