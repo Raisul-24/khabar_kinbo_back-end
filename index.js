@@ -5,7 +5,8 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 
 const locationRoutes = require("./Routes/locationRoutes");
-const { restaurant } = require("./Controllers/restaurantControler");
+const restaurantRoute = require("./Routes/restaurantRoute");
+const resturantDetailsRoute = require("./Routes/restaurantDetails");
 
 const port = process.env.PORT || 5000;
 
@@ -24,7 +25,8 @@ app.use(
   app.use(express.json());
 
   app.use('/api', locationRoutes);
-  app.use('/api' , restaurant)
+  app.use('/api' , restaurantRoute)
+  app.use('/api' , resturantDetailsRoute)
 
 const connectDb = async () => {
   try {
