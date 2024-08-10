@@ -4,7 +4,7 @@ const router = express.Router();
 
 // Define routes and link them to controller methods
 // router.post('/restaurants', createRestaurant);
-router.get('/restaurants', getAllRestaurants);
+router.get('/restaurantsDetails', getAllRestaurants);
 // router.get('/restaurants/:id', restaurantController.getRestaurantById);
 // router.put('/restaurants/:id', restaurantController.updateRestaurant);
 // router.delete('/restaurants/:id', restaurantController.deleteRestaurant);
