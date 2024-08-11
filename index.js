@@ -8,7 +8,7 @@ const locationRoutes = require("./Routes/locationRoutes");
 const restaurantRoute = require("./Routes/restaurantRoute");
 const resturantDetailsRoute = require("./Routes/restaurantDetails");
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 51000;
 
 // middleware
 app.use(
@@ -42,9 +42,9 @@ const connectDb = async () => {
 connectDb();
 
 app.get("/", (req, res) => {
-    res.send("resturent");
+    res.send("Khabar Kinbo");
   });
   
   app.listen(port, () => {
-    console.log(`resturent running in ${port}`);
+    console.log(`Khabar kinbo running in ${port}`);
   });
