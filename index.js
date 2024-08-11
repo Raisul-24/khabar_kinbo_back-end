@@ -42,9 +42,9 @@ const connectDb = async () => {
 connectDb();
 
 app.get("/", (req, res) => {
-    res.send("Khabar Kinbo");
+    res.send("Khabar Kinbo web");
   });
   
   app.listen(port, () => {
-    console.log(`Khabar kinbo running in ${port}`);
+    console.log(`Khabar kinbo webrunning in ${port}`);
   });
