@@ -31,6 +31,11 @@ const locationSchema = new mongoose.Schema({
     required: true,
     unique: false,
   },
+  address:{
+    type: String,
+    required: true,
+    unique: false,
+  }
 });
 
 const Restaurant = mongoose.model('Restaurant', locationSchema , 'restaurant');

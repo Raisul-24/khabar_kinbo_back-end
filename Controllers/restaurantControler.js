@@ -5,14 +5,13 @@ const restaurant = asyncHandler(async (req, res) => {
     try {
         // Extract the location from query parameters
         const { location } = req.query;
-        console.log(location);
 
         // If a location is provided, filter by location
         const query = location ? { location } : {};
-
+        console.log(query , location);
+        
         // Fetch the data from the database based on the query
-        const restaurants = await Restaurant.find(query);
-        // console.log(restaurants);
+        const restaurants = await Restaurant.find(query); // Changed location to query
 
         // Return the data as a JSON response
         res.status(200).json(restaurants);
