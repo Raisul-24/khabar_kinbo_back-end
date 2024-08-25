@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const locationRoutes = require("./Routes/locationRoutes");
 const restaurantRoute = require("./Routes/restaurantRoute");
 const resturantDetailsRoute = require("./Routes/restaurantDetails");
+const requestRestaurantRoute = require('./Routes/registerRestaurant')
 
 const port = process.env.PORT || 51000;
 
@@ -15,9 +16,7 @@ app.use(
     cors({
       origin: [
         "http://localhost:3000",
-        "http://localhost:3001",
       ],
-  
       credentials: true,
     })
   );
@@ -28,6 +27,7 @@ app.use(
   app.use('/api', locationRoutes);
   app.use('/api' , restaurantRoute)
   app.use('/api' , resturantDetailsRoute)
+  app.use('/api' , requestRestaurantRoute)
 
 const connectDb = async () => {
   try {
