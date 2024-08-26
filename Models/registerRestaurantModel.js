@@ -31,5 +31,4 @@ const registerRestaurantSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 const RequestRegisterRestaurant = mongoose.model('RequestRegisterRestaurant', registerRestaurantSchema);
-
 module.exports = RequestRegisterRestaurant;
