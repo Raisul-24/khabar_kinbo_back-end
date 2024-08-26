@@ -6,8 +6,9 @@ const mongoose = require("mongoose");
 
 const locationRoutes = require("./Routes/locationRoutes");
 const restaurantRoute = require("./Routes/restaurantRoute");
-const resturantDetailsRoute = require("./Routes/restaurantDetails");
+const restaurantDetailsRoute = require("./Routes/restaurantDetails");
 const requestRestaurantRoute = require('./Routes/registerRestaurant')
+const userRoute = require('./Routes/userRoutes')
 
 const port = process.env.PORT || 51000;
 
@@ -26,8 +27,9 @@ app.use(
 
   app.use('/api', locationRoutes);
   app.use('/api' , restaurantRoute)
-  app.use('/api' , resturantDetailsRoute)
+  app.use('/api' , restaurantDetailsRoute)
   app.use('/api' , requestRestaurantRoute)
+  app.use('/api' , userRoute)
 
 const connectDb = async () => {
   try {
