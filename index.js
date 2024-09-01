@@ -44,7 +44,7 @@ const connectDb = async () => {
 connectDb();
 
 app.get("/", (req, res) => {
-    res.send("Khabar Kinbo web");
+    res.send("Khabar-Kinbo web");
   });
   
   app.listen(port, () => {
